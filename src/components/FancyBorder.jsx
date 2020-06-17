@@ -3,16 +3,10 @@ import React, { Component } from "react";
 class FancyBorder extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
   }
   render() {
-    return (
-      <div
-        className={"FancyBorder FancyBorder-" + this.props.color}
-        style={{ background: this.props.color }}
-      >
-        {this.props.children}
-      </div>
-    );
+    return <div style={{ background: "blue" }}>{this.props.content}</div>;
   }
 }
 

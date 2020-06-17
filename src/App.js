@@ -1,12 +1,11 @@
 import React from "react";
-
-import WelcomeDialog from "./components/WelcomeDialog";
+import FilterableProductTable from "./components/FilterableProductTable";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <WelcomeDialog />
+      <div>
+        <FilterableProductTable />
       </div>
     );
   }
